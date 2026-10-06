@@ -25,6 +25,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: var(--font-body);
@@ -447,7 +452,7 @@ h1, h2, h3, h4, h5 {
 
 .featured-video {
   max-width: var(--max-width);
-  margin: 0 auto 80px;
+  margin: 64px auto 80px;
   padding: 0 24px;
 }
 
@@ -475,13 +480,6 @@ h1, h2, h3, h4, h5 {
 .gallery-section {
   background: var(--white);
   padding: 80px 24px;
-  text-align: center;
-}
-
-.gallery-section .subtext {
-  color: var(--gray-text);
-  max-width: 600px;
-  margin: 0 auto 40px;
 }
 
 .gallery-grid {
@@ -496,19 +494,6 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 14px;
   border-radius: 6px;
   break-inside: avoid;
-}
-
-.videos-section {
-  background: var(--black);
-  color: var(--white);
-  padding: 80px 24px 56px;
-  text-align: center;
-}
-
-.videos-section .subtext {
-  opacity: 0.85;
-  max-width: 600px;
-  margin: 0 auto;
 }
 
 .video-grid {
@@ -543,24 +528,6 @@ h1, h2, h3, h4, h5 {
 .video-card h3 {
   font-size: 0.98rem;
   font-weight: 600;
-}
-
-.load-more-wrap {
-  text-align: center;
-  padding: 0 24px 72px;
-  background: var(--white);
-}
-
-.load-more-wrap button {
-  font-family: var(--font-head);
-  font-weight: 600;
-  font-size: 0.85rem;
-  letter-spacing: 0.05em;
-  background: none;
-  border: none;
-  border-bottom: 1px solid var(--black);
-  padding-bottom: 2px;
-  cursor: pointer;
 }
 
 /* ---------- Contact page ---------- */
