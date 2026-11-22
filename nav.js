@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  if (window.matchMedia('(max-width: 760px)').matches) {
+  if (window.matchMedia('(max-width: 1000px)').matches) {
     document.querySelectorAll('.has-dropdown > a').forEach(function (link) {
       link.addEventListener('click', function (e) {
         var parent = link.parentElement;
