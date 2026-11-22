@@ -129,9 +129,20 @@
   .site-footer { padding: 28px 0 48px; color: var(--muted); font-size: 0.95rem; }
   .site-footer p { margin: 0 0 6px; }
 
+  .std { border-bottom: 0; }
+  .std-poster {
+    width: 100%; height: auto; aspect-ratio: 792 / 1224; margin: 4px 0 22px;
+    border-radius: 8px; background: #000;
+  }
+  .std-dates { margin-bottom: 0; }
+  .std-dates li { padding: 8px 0; border-top: 1px solid var(--line); }
+  .std-dates li:first-child { border-top: 0; }
+  .std-dates .role { color: var(--text); font-size: 1rem; }
+
   @media (min-width: 560px) {
     .title h1 { font-size: 2.6rem; }
     .bio-photo { width: 200px; float: right; margin: 4px 0 12px 20px; }
+    .std-poster { max-width: 360px; }
     .roster { columns: 2; column-gap: 24px; }
     .roster li { break-inside: avoid; }
   }
@@ -355,6 +366,18 @@
       <li>M. William Shiner<span class="role">Department of Theatre</span></li>
     </ul>
     <p>The UNLV Percussion Area runs under the direction of Dr. Kyle Bissantz with Professor Dr. Dean Gronemeier, Adjunct Professors Dr. Alex Stopa and Dr. Ryan Bond, and Graduate Assistants Joshua Castillo-Romero, Wesley Denkins, Ethan DeSouza, Louie Pereira, and Chandler White.</p>
+  </section>
+
+  <section id="save-the-date" class="std" aria-labelledby="std-h">
+    <p class="eyebrow">Save the Date</p>
+    <h2 id="std-h">Black Box XIX</h2>
+    <p>Our annual Black Box collaboration production with the Department of Theatre’s Moving Light Lab.</p>
+    <img class="std-poster" src="black-box-xix.jpg" width="792" height="1224" loading="lazy" decoding="async" alt="Black Box XIX poster: thin white lettering between two red and gray shards of light on black">
+    <ul class="people std-dates">
+      <li>Friday, April 16, 2027<span class="role">7:30 P.M.</span></li>
+      <li>Saturday, April 17, 2027<span class="role">3:00 P.M. &amp; 7:30 P.M.</span></li>
+      <li>Sunday, April 18, 2027<span class="role">3:00 P.M.</span></li>
+    </ul>
   </section>
 
 </main>
