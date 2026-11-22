@@ -536,6 +536,74 @@ h1, h2, h3, h4, h5 {
   margin-top: 8px;
 }
 
+/* ---------- Programs page ---------- */
+
+.programs-hero {
+  padding-bottom: 48px;
+}
+
+.program-index {
+  background: var(--black);
+  color: var(--white);
+  padding: 0 24px 96px;
+}
+
+.program-cards {
+  max-width: 760px;
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+}
+
+.program-card {
+  display: block;
+  background: var(--card-bg);
+  border-left: 4px solid var(--red);
+  border-radius: 10px;
+  padding: 24px;
+  transition: background 0.2s ease;
+}
+
+.program-card:hover,
+.program-card:focus-visible {
+  background: #262626;
+}
+
+.program-card span {
+  display: block;
+}
+
+.program-card-date {
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 6px;
+}
+
+.program-card-title {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.25;
+  margin-bottom: 4px;
+}
+
+.program-card-venue {
+  opacity: 0.8;
+  margin-bottom: 14px;
+}
+
+.program-card-cta {
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 /* ---------- Footer ---------- */
 
 .site-footer {
@@ -625,7 +693,9 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-@media (max-width: 760px) {
+/* Collapse the nav into the menu button before the links run out of room
+   (seven top-level links need ~980px). Keep in sync with nav.js. */
+@media (max-width: 1000px) {
   .nav-toggle {
     display: inline-block;
   }
@@ -678,7 +748,9 @@ h1, h2, h3, h4, h5 {
   .has-dropdown.is-open .dropdown {
     display: block;
   }
+}
 
+@media (max-width: 760px) {
   .ensemble-row,
   .ensemble-row:nth-child(even) .ensemble-media {
     grid-template-columns: 1fr;
