@@ -60,6 +60,9 @@ sub-path without edits.
 5. Styling lives entirely in `/styles.css`. Shared rules (buttons, section
    blocks, header, footer) are near the top; page-specific rules (faculty
    grid, ensemble rows, media gallery) are grouped by page further down.
+   Every page links it as `styles.css?v=YYYYMMDD` (and `nav.js?v=...`).
+   After editing either file, change that `v=` value in every page, or
+   visitors' browsers may keep showing the old cached version.
 6. Videos on the Media page are plain `<iframe>` embeds pointed at
    `youtube.com/embed/<id>` or `player.vimeo.com/video/<id>` — swap the ID to
    change a video.
